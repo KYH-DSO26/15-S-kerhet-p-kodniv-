@@ -5,4 +5,5 @@
   <Project Path="04 Det låsta loggboksinlägget (Immutabilitet med Record)/04 Det låsta loggboksinlägget (Immutabilitet med Record).csproj" />
   <Project Path="05 Den SURRADE kompassen (Minsta behörighet)/05 Den SURRADE kompassen (Minsta behörighet).csproj" />
   <Project Path="06 Det robusta bokningsnumret/06 Det robusta bokningsnumret.csproj" />
+  <Project Path="Säkrad API-parser (TryParse-mönstret)/Säkrad API-parser (TryParse-mönstret).csproj" />
 </Solution>
