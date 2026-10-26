@@ -5,5 +5,9 @@
   <Project Path="04 Det låsta loggboksinlägget (Immutabilitet med Record)/04 Det låsta loggboksinlägget (Immutabilitet med Record).csproj" />
   <Project Path="05 Den SURRADE kompassen (Minsta behörighet)/05 Den SURRADE kompassen (Minsta behörighet).csproj" />
   <Project Path="06 Det robusta bokningsnumret/06 Det robusta bokningsnumret.csproj" />
-  <Project Path="Säkrad API-parser (TryParse-mönstret)/Säkrad API-parser (TryParse-mönstret).csproj" />
+  <Project Path="08 Rollbaserad dörrvakt (Minsta behörighet i logik)/08 Rollbaserad dörrvakt (Minsta behörighet i logik).csproj" />
+  <Project Path="09 Maskerat databasundantag (Säker felhantering)/09 Maskerat databasundantag (Säker felhantering).csproj" />
+  <Project Path="10 Säkrad historik med historik-kopiering (Immutabilitet med with)/10 Säkrad historik med historik-kopiering (Immutabilitet med with).csproj" />
+  <Project Path="11 Det transaktionella passagerarregistret (Allt eller inget-principen)/11 Det transaktionella passagerarregistret (Allt eller inget-principen).csproj" />
+  <Project Path="Säkrad API-parser (TryParse-mönstret)/07 Säkrad API-parser (TryParse-mönstret).csproj" />
 </Solution>
