@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="01 Dörrvakten för båtnamn (Guard Clauses)/01 Dörrvakten för båtnamn (Guard Clauses).csproj" />
   <Project Path="02 Fartbegränsaren i hamnen (Intervallvalidering)/02 Fartbegränsaren i hamnen (Intervallvalidering).csproj" />
+  <Project Path="03 Det anonyma felmeddelandet (Säker felhantering)/03 Det anonyma felmeddelandet (Säker felhantering).csproj" />
 </Solution>
