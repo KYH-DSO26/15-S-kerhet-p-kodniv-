@@ -10,5 +10,8 @@
   <Project Path="10 Säkrad historik med historik-kopiering (Immutabilitet med with)/10 Säkrad historik med historik-kopiering (Immutabilitet med with).csproj" />
   <Project Path="11 Det transaktionella passagerarregistret (Allt eller inget-principen)/11 Det transaktionella passagerarregistret (Allt eller inget-principen).csproj" />
   <Project Path="12 Den hermetiska systemmodulen (Strikta åtkomstnivåer)/12 Den hermetiska systemmodulen (Strikta åtkomstnivåer).csproj" />
+  <Project Path="13 Säkrad Logger med Hash-kontroll (Dataintegritet)/13 Säkrad Logger med Hash-kontroll (Dataintegritet).csproj" />
+  <Project Path="14 Den säkra API-skölden (Sanitering av text)/14 Den säkra API-skölden (Sanitering av text).csproj" />
+  <Project Path="15 Robust fallback-konfigurator (Exception-säkrad state machine)/15 Robust fallback-konfigurator (Exception-säkrad state machine).csproj" />
   <Project Path="Säkrad API-parser (TryParse-mönstret)/07 Säkrad API-parser (TryParse-mönstret).csproj" />
 </Solution>
