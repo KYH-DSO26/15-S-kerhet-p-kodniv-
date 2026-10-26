@@ -26,7 +26,14 @@ internal class Program
     static void Main(string[] args)
     {
         var hanterare = new FilHanterare();
-        hanterare.LäsKänsligFil(@"C:\DoldaFiler\KänsligData.txt");      // Den filen finns inte
+        var filnamn = "C:/Windows/KänsligData.txt";
+        Console.WriteLine($"Läser in \"{filnamn}\"");
+        hanterare.LäsKänsligFil(filnamn);      // Den filen finns inte
+
+
+        filnamn = @"C:\DoldaFiler\KänsligData.txt";
+        Console.WriteLine($"\n\nLäser in '{filnamn}'");
+        hanterare.LäsKänsligFil(filnamn);      // Den filen finns inte
 
 
 
