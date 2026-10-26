@@ -4,4 +4,5 @@
   <Project Path="03 Det anonyma felmeddelandet (Säker felhantering)/03 Det anonyma felmeddelandet (Säker felhantering).csproj" />
   <Project Path="04 Det låsta loggboksinlägget (Immutabilitet med Record)/04 Det låsta loggboksinlägget (Immutabilitet med Record).csproj" />
   <Project Path="05 Den SURRADE kompassen (Minsta behörighet)/05 Den SURRADE kompassen (Minsta behörighet).csproj" />
+  <Project Path="06 Det robusta bokningsnumret/06 Det robusta bokningsnumret.csproj" />
 </Solution>
