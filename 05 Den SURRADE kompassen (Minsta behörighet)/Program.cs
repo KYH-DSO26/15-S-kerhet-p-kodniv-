@@ -1,4 +1,6 @@
-﻿namespace _05_Den_SURRADE_kompassen__Minsta_behörighet_;
+﻿using System.Diagnostics;
+
+namespace _05_Den_SURRADE_kompassen__Minsta_behörighet_;
 
 public class DigitalKompass
 {
@@ -34,7 +36,11 @@ internal class Program
 
 
 
-        Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
-        Console.ReadKey();
+        // Håll konsolen öppen i debug mode.
+        if (Debugger.IsAttached)
+        {
+            Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
+            Console.ReadKey();
+        }
     }
 }

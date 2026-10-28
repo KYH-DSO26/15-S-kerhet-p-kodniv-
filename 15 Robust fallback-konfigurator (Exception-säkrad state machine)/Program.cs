@@ -1,4 +1,6 @@
-﻿namespace _15_Robust_fallback_konfigurator__Exception_säkrad_state_machine_;
+﻿using System.Diagnostics;
+
+namespace _15_Robust_fallback_konfigurator__Exception_säkrad_state_machine_;
 
 public class ElsystemKonfigurator
 {
@@ -41,7 +43,11 @@ internal class Program
 
 
 
-        Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
-        Console.ReadKey();
+        // Håll konsolen öppen i debug mode.
+        if (Debugger.IsAttached)
+        {
+            Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
+            Console.ReadKey();
+        }
     }
 }

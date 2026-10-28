@@ -1,4 +1,6 @@
-﻿namespace _09_Maskerat_databasundantag__Säker_felhantering_;
+﻿using System.Diagnostics;
+
+namespace _09_Maskerat_databasundantag__Säker_felhantering_;
 
 
 public class DataHämtningsException : Exception
@@ -42,7 +44,11 @@ internal class Program
 
 
 
-        Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
-        Console.ReadKey();
+        // Håll konsolen öppen i debug mode.
+        if (Debugger.IsAttached)
+        {
+            Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
+            Console.ReadKey();
+        }
     }
 }

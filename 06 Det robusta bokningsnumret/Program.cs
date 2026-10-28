@@ -1,4 +1,6 @@
-﻿namespace _06_Det_robusta_bokningsnumret;
+﻿using System.Diagnostics;
+
+namespace _06_Det_robusta_bokningsnumret;
 
 public class BokningsReferens
 {
@@ -30,7 +32,11 @@ internal class Program
 
 
 
-        Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
-        Console.ReadKey();
+        // Håll konsolen öppen i debug mode.
+        if (Debugger.IsAttached)
+        {
+            Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
+            Console.ReadKey();
+        }
     }
 }

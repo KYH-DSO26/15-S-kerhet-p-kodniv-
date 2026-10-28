@@ -1,4 +1,6 @@
-﻿namespace _04_Det_låsta_loggboksinlägget__Immutabilitet_med_Record_;
+﻿using System.Diagnostics;
+
+namespace _04_Det_låsta_loggboksinlägget__Immutabilitet_med_Record_;
 
 public record Loggboksinlägg(
     DateTime Tidsstämpel,       // Förklarande kommentar
@@ -21,7 +23,11 @@ internal class Program
 
 
 
-        Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
-        Console.ReadKey();
+        // Håll konsolen öppen i debug mode.
+        if (Debugger.IsAttached)
+        {
+            Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
+            Console.ReadKey();
+        }
     }
 }

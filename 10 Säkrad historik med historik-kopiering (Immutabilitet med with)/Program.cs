@@ -1,4 +1,6 @@
-﻿namespace _10_Säkrad_historik_med_historik_kopiering__Immutabilitet_med_with_;
+﻿using System.Diagnostics;
+
+namespace _10_Säkrad_historik_med_historik_kopiering__Immutabilitet_med_with_;
 
 public record Färdplan(string RuttID, string StartHamn, string DestinationHamn);
 internal class Program
@@ -17,7 +19,11 @@ internal class Program
 
 
 
-        Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
-        Console.ReadKey();
+        // Håll konsolen öppen i debug mode.
+        if (Debugger.IsAttached)
+        {
+            Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
+            Console.ReadKey();
+        }
     }
 }

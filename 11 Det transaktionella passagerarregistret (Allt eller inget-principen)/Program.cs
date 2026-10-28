@@ -1,4 +1,6 @@
-﻿namespace _11_Det_transaktionella_passagerarregistret__Allt_eller_inget_principen_;
+﻿using System.Diagnostics;
+
+namespace _11_Det_transaktionella_passagerarregistret__Allt_eller_inget_principen_;
 
 public class PassagerarManifest
 {
@@ -47,8 +49,12 @@ internal class Program
 
 
 
-        Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
-        Console.ReadKey();
+        // Håll konsolen öppen i debug mode.
+        if (Debugger.IsAttached)
+        {
+            Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
+            Console.ReadKey();
+        }
     }
 }
  

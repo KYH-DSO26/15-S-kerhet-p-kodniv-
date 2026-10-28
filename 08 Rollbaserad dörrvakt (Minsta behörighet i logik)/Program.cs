@@ -1,4 +1,6 @@
-﻿namespace _08_Rollbaserad_dörrvakt__Minsta_behörighet_i_logik_;
+﻿using System.Diagnostics;
+
+namespace _08_Rollbaserad_dörrvakt__Minsta_behörighet_i_logik_;
 
 public class LänspumpSystem
 {
@@ -34,7 +36,11 @@ internal class Program
 
 
 
-        Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
-        Console.ReadKey();
+        // Håll konsolen öppen i debug mode.
+        if (Debugger.IsAttached)
+        {
+            Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
+            Console.ReadKey();
+        }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace _13_Säkrad_Logger_med_Hash_kontroll__Dataintegritet_;
+﻿using System.Diagnostics;
+
+namespace _13_Säkrad_Logger_med_Hash_kontroll__Dataintegritet_;
 
 public class Loggrad
 {
@@ -37,7 +39,11 @@ internal class Program
 
 
 
-        Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
-        Console.ReadKey();
+        // Håll konsolen öppen i debug mode.
+        if (Debugger.IsAttached)
+        {
+            Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
+            Console.ReadKey();
+        }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace _02_Fartbegränsaren_i_hamnen__Intervallvalidering_;
+﻿using System.Diagnostics;
+
+namespace _02_Fartbegränsaren_i_hamnen__Intervallvalidering_;
 
 public class HastighetsRegulator
 {
@@ -34,7 +36,11 @@ internal class Program
 
 
 
-        Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
-        Console.ReadKey();
+        // Håll konsolen öppen i debug mode.
+        if (Debugger.IsAttached)
+        {
+            Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
+            Console.ReadKey();
+        }
     }
 }

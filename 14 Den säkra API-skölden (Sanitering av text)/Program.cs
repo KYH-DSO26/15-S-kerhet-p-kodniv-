@@ -1,4 +1,6 @@
-﻿namespace _14_Den_säkra_API_skölden__Sanitering_av_text_;
+﻿using System.Diagnostics;
+
+namespace _14_Den_säkra_API_skölden__Sanitering_av_text_;
 
 public class InputSanitizer
 {
@@ -27,7 +29,11 @@ internal class Program
 
 
 
-        Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
-        Console.ReadKey();
+        // Håll konsolen öppen i debug mode.
+        if (Debugger.IsAttached)
+        {
+            Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
+            Console.ReadKey();
+        }
     }
 }

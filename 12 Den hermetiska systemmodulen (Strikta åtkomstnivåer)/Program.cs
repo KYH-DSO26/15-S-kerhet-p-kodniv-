@@ -1,4 +1,6 @@
-﻿namespace _12_Den_hermetiska_systemmodulen__Strikta_åtkomstnivåer_;
+﻿using System.Diagnostics;
+
+namespace _12_Den_hermetiska_systemmodulen__Strikta_åtkomstnivåer_;
 
 public class NavigationsKärna
 {
@@ -39,7 +41,11 @@ internal class Program
 
 
 
-        Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
-        Console.ReadKey();
+        // Håll konsolen öppen i debug mode.
+        if (Debugger.IsAttached)
+        {
+            Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
+            Console.ReadKey();
+        }
     }
 }

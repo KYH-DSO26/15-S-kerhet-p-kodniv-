@@ -1,4 +1,6 @@
-﻿namespace _03_Det_anonyma_felmeddelandet__Säker_felhantering_;
+﻿using System.Diagnostics;
+
+namespace _03_Det_anonyma_felmeddelandet__Säker_felhantering_;
 
 public class FilHanterare
 {
@@ -39,7 +41,11 @@ internal class Program
 
 
 
-        Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
-        Console.ReadKey();
+        // Håll konsolen öppen i debug mode.
+        if (Debugger.IsAttached)
+        {
+            Console.Write("\n\nTryck på en tangent för att stänga fönstret...");
+            Console.ReadKey();
+        }
     }
 }
